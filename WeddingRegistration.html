@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Le-Posey RSVP System</title>
+    <link rel="stylesheet" href="WeddingRegistration.css">
+  </head>
+  <body>
+    <div id="headText">
+      <h1>Le-Posey Registration System</h1>
+    </div>
+      
+    <div id="container" >
+      
+      <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDBxRXNITjA3OE1CbU9wcEFZdEV3MVE6MA&amp;theme=0AX42CRMsmRFbUy1mM2MxMmQxMi1kNWM3LTQzNDEtOTVhZS1lNGNmZjk1N2Q5MzY&amp;ifq" method="POST" id="ss-form">
+	      <div id="speech-bubble" hidden="true">
+	      	<p id="text"></p>
+	      	
+	      	<div id="memoryInpt" class="inputclass" hidden="true">
+				<textarea id="Memory" name="entry.9.single"></textarea> 
+			</div>
+	      	
+	      	<div id="nameInpt" class="inputclass" hidden="true">
+				First Name: <input id="FirstName" type="text" name="entry.0.single"/>  
+			    Last Name: <input id="LastName" type="text" name="entry.1.single"/><br />
+			</div>
+			  
+			<div id="comingInpt" class="inputclass" hidden="true">
+			    <input id="YesComing" name="entry.2.group" value="Yes" type="radio" checked="true"/>Yes
+			    <input id="NoComing" name="entry.2.group" value="No" type="radio"/>No
+			  </div>
+			  
+			  <div id="plus1Inpt" class="inputclass" hidden="true">
+			    <input id="YesGuest" name="entry.3.group" value="Yes" type="radio" checked="true"/>Yes
+			    <input id="NoGuest" name="entry.3.group" value="No" type="radio"/>No
+			  </div>
+			  
+			  <div id="mainFoodInpt" class="inputclass" hidden="true">
+			    <input id="MainMeat" name="entry.7.group" value="Meat" type="radio" checked="true"/>Meat
+			    <input id="MainVeg" name="entry.7.group" value="Vegetarian" type="radio"/>Vegetarian
+			  </div>
+			  
+			  <div id="guestFoodInpt" class="inputclass" hidden="true">
+			    <input id="GuestMeat" name="entry.10.group" value="Meat" type="radio" checked="true"/>Meat
+			    <input id="GuestVeg" name="entry.10.group" value="Vegetarian" type="radio"/>Vegetarian
+			  </div>
+			  
+			  <div id="restrictionInpt" class="inputclass" hidden="true">
+			  	<textarea id="DietaryRestrictions" name="entry.8.group"></textarea> 
+			  </div>
+			  
+			  <div id="plus1nameInpt" class="inputclass" hidden="true">
+			  	First Name: <input id="Plus1FirstName" type="text" name="entry.4.single"/> 
+			    Last Name: <input id="Plus1LastName" type="text" name="entry.6.single"/><br />
+			  </div>
+			  
+			  <div id="submitInpt" class="inputclass" hidden="true">
+				<input type="submit" name="submit" value="Submit">
+			</div>
+	      </div>
+	  </form>
+      
+      <div id="oak" hidden="true">
+      	<img src="./Images/Oak_Big.png"/>
+      </div>
+      
+      
+    </div>
+    
+    <div id="footer">
+	    <div id="instructions">
+	      <p id="instructions">Press [Enter] to continue</p>
+	    </div>
+	    
+	    <div id="audiodiv">
+		    <audio controls="controls" autoplay="autoplay" loop="loop">
+			  <source src="./Media/opening.ogg" type="audio/ogg" />
+			  <source src="./Media/opening.mp3" type="audio/mpeg" />
+			  Your browser does not support the audio element.
+			</audio>
+		</div>
+	</div>
+
+    <script type="application/dart" src="WeddingRegistration.dart"></script>
+    <script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>

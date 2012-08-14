@@ -1,0 +1,106 @@
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+p {
+  color: #333;
+}
+
+@font-face {
+	font-family: cool_font;
+	src: url('./Fonts/pkmndp.ttf');
+}
+
+.inputclass {
+	font-size: 24pt;
+	text-align: left;
+	position: absolute;
+	left: 35px;
+	top: 80px;
+}
+
+.wideinput {
+	width: 600px;
+	height: 2em
+}
+
+#container {
+  margin-left:auto;
+  margin-right:auto;
+  width: 720px;
+  height: 480px;
+  position: relative;
+  border: 1px solid #ccc;
+  background-image: url('./Images/start.png');
+  background-color: #fff;
+  background-repeat:no-repeat;
+  font-family: cool_font;
+}
+
+#speech-bubble {
+  width: 700px;
+  height: 125px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  background-image: url('./Images/sb.png');
+  background-size: 100%;
+  background-repeat:no-repeat;
+  font-family: cool_font;
+  line-height: 200%;
+}
+
+#oak {
+  width: 200px; 
+  position: absolute;
+  bottom: 150px;
+  left: 300px;
+}
+
+#text {
+  font-size: 24pt;
+  text-align: left;
+  position: absolute;
+  left: 35px;
+  top: -10px;
+  width: 600px;
+}
+
+#headText {
+  margin-left:auto;
+  margin-right:auto;
+  width: 720px;
+  text-align: left;
+}
+
+#instructions {
+  margin-left:auto;
+  margin-right:auto;
+  width: 720px;
+  font-size: 10pt;
+  text-align: left;
+  font-style: italic;
+}
+
+#audiodiv {
+  margin-left:auto;
+  margin-right:auto;
+  width: 720px;
+  font-size: 10pt;
+  text-align: right;
+  font-style: italic;
+}
+
+textarea#Memory , textarea#DietaryRestrictions {
+	width: 600px;
+	height: 22px;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+}
+
